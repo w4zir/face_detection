@@ -145,7 +145,7 @@ add_executable(face_detection_cuda src/face_detection_cuda.cpp)
 add_executable(face_tracking src/face_tracking.cpp)
 #add_executable(face_tracking_cuda src/face_tracking_cuda.cpp)
 add_executable(face_listener src/face_listener.cpp)
-
+add_executable(face_overlay src/face_overlay.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -154,7 +154,7 @@ add_dependencies(face_tracking ${PROJECT_NAME}_gencfg)
 # add_dependencies(face_detection_node face_detection_generate_messages_cpp)
 add_dependencies(face_detection_cuda ${PROJECT_NAME}_gencfg)
 #add_dependencies(face_tracking_cuda ${PROJECT_NAME}_gencfg)
-
+add_dependencies(face_overlay ${PROJECT_NAME}_gencfg)
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(face_detection_node
@@ -173,6 +173,9 @@ target_link_libraries(face_tracking
 #   ${catkin_LIBRARIES}
 #)
 target_link_libraries(face_listener
+   ${catkin_LIBRARIES}
+)
+target_link_libraries(face_overlay
    ${catkin_LIBRARIES}
 )
 
