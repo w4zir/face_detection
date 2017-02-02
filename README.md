@@ -1,6 +1,7 @@
 **Introduction:**
-This is an extension of the face detection project by phil333 (https://github.com/phil333). I have used his face detection project and added a new feature called face overlay where randomly selected images from a set of files in images/ folder are overlayed on the detected face. This was a demo for Lahore Science Mela (http://lsm2017.org/) by CYPHYNETS research lab (https://cyphynets.lums.edu.pk), LUMS. The aim was to show the significance of science with practical and fun demo.
+This is an extension of the face detection project by [phil333] (https://github.com/phil333). I have used his face detection project and added a new feature called face overlay where randomly selected images from a set of files in images/ folder are overlayed on the detected face. This was a demo for [Lahore Science Mela] (http://lsm2017.org/) by [CYPHYNETS research lab] (https://cyphynets.lums.edu.pk), LUMS. The aim was to show the significance of science with practical and fun demo.
 
+![](/output/face_overlay_pti.jpg?raw=true "Detect face and overlay a batman mask.")
 
 **LAYOUT:**
 - face_detection/
